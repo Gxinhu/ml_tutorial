@@ -7,7 +7,6 @@ import revealOptions from './revealOptions';
 
 import '../../notes';
 import 'reveal.js/css/reveal.css';
-
 const Deck = ({ options, children }) => {
   useEffect(() => {
     Reveal.initialize({ ...revealOptions, ...options });

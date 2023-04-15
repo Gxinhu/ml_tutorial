@@ -1,7 +1,5 @@
 import { React, Component } from 'react';
 import Slide from '../Components/RevealComponents/Slide';
-import Note from '../Components/Notes/note';
-import Link from '../Components/Link';
 import { $, $$ } from '../Animation/Typeset';
 import ManualTool from '../Animation/ManualTool';
 import AutoTool from '../Animation/AutoTool';
@@ -9,13 +7,7 @@ import ToggleForward from '../Animation/ToggleForward';
 import { Element } from 'react-scroll';
 import {
   Box,
-  Button,
   Typography,
-  Fab,
-  Tooltip,
-  Card,
-  CardContent,
-  Divider,
   Grid,
 } from '@material-ui/core';
 
