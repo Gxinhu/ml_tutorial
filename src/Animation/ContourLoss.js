@@ -1,6 +1,6 @@
-/* 
+/*
 	Donny Bertucci: @xnought
-	Summary: 
+	Summary:
 		This component renders the contour and a dot to represent where we are
 */
 import React, { Component } from 'react';
@@ -127,7 +127,7 @@ class ContourLoss extends Component {
       m = height,
       values = new Array(n * m);
 
-    /* 
+    /*
 			this code below was adapted from
 			d3-contour documentation examples
 		*/
@@ -297,6 +297,7 @@ class ContourLoss extends Component {
           paddingLeft: '85px',
           paddingTop: '40px',
           overflow: 'visible',
+          fontSize: '50%',
         }}
       >
         <svg style={{ width, height, overflow: 'visible' }} id="contour">

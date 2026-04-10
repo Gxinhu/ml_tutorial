@@ -6,7 +6,7 @@ const List = () => (
     <ul>
       <li style={{ fontSize: 40 }}>深度学习基本介绍</li>
       <li style={{ fontSize: 40 }}>PINN (Physical Informed Neural Network)</li>
-      <li style={{ fontSize: 40 }}>深度学习在CFD中的典型应用（代理模型）</li>
+      <li style={{ fontSize: 40 }}>基于数据驱动深度学习的快速气动预测</li>
     </ul>
   </Slide>
 );

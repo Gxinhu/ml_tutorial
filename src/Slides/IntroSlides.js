@@ -98,7 +98,7 @@ class IntroSlides extends Component {
                 </Grid>
               </Grid>
             </p>
-            <img width="450px" src="image/1219/linear_model.png" />
+            <img width="400px" src="image/1219/linear_model.png" />
           </Slide>
 
           <Slide>
@@ -214,6 +214,7 @@ class IntroSlides extends Component {
             </Box>
           </Slide>
         </Slide>
+
       </>
     );
   }
