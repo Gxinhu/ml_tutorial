@@ -1,10 +1,23 @@
 import RevealHighlight from 'reveal.js/plugin/highlight';
 import RevealMarkdown from 'reveal.js/plugin/markdown';
-import RevealMath from 'reveal.js/plugin/math';
 import RevealNotes from 'reveal.js/plugin/notes';
 import RevealSearch from 'reveal.js/plugin/search';
 import RevealZoom from 'reveal.js/plugin/zoom';
 import blackboardImage from '../../../plugins/reveal.js-plugins/chalkboard/img/blackboard.png';
+import boardmarkerBlackImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-black.png';
+import boardmarkerBlueImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-blue.png';
+import boardmarkerGreenImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-green.png';
+import boardmarkerOrangeImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-orange.png';
+import boardmarkerPurpleImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-purple.png';
+import boardmarkerRedImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-red.png';
+import boardmarkerYellowImage from '../../../plugins/reveal.js-plugins/chalkboard/img/boardmarker-yellow.png';
+import chalkBlueImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-blue.png';
+import chalkGreenImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-green.png';
+import chalkOrangeImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-orange.png';
+import chalkPurpleImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-purple.png';
+import chalkRedImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-red.png';
+import chalkWhiteImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-white.png';
+import chalkYellowImage from '../../../plugins/reveal.js-plugins/chalkboard/img/chalk-yellow.png';
 import spongeImage from '../../../plugins/reveal.js-plugins/chalkboard/img/sponge.png';
 import revealChalkboard from '../../Plugins/revealChalkboard';
 import revealCustomControls from '../../Plugins/revealCustomControls';
@@ -16,7 +29,6 @@ export const revealPlugins = [
   RevealNotes,
   RevealSearch,
   RevealZoom,
-  RevealMath,
   revealCustomControls,
   revealChalkboard,
   revealFullscreen,
@@ -168,14 +180,70 @@ const revealConfig = {
   // The display mode that will be used to show slides
   display: 'block',
 
-  math: {
-    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-    tex: {
-      inlineMath: [
-        ['$', '$'],
-        ['\\(', '\\)'],
-      ],
-    },
+  chalkboard: {
+    theme: 'chalkboard',
+    background: ['rgba(127,127,127,.1)', blackboardImage],
+    eraser: { src: spongeImage, radius: 20 },
+    boardmarkers: [
+      {
+        color: 'rgba(100,100,100,1)',
+        cursor: `url(${boardmarkerBlackImage}), auto`,
+      },
+      {
+        color: 'rgba(30,144,255,1)',
+        cursor: `url(${boardmarkerBlueImage}), auto`,
+      },
+      {
+        color: 'rgba(220,20,60,1)',
+        cursor: `url(${boardmarkerRedImage}), auto`,
+      },
+      {
+        color: 'rgba(50,205,50,1)',
+        cursor: `url(${boardmarkerGreenImage}), auto`,
+      },
+      {
+        color: 'rgba(255,140,0,1)',
+        cursor: `url(${boardmarkerOrangeImage}), auto`,
+      },
+      {
+        color: 'rgba(220,0,220,1)',
+        cursor: `url(${boardmarkerPurpleImage}), auto`,
+      },
+      {
+        color: 'rgba(255,220,0,1)',
+        cursor: `url(${boardmarkerYellowImage}), auto`,
+      },
+    ],
+    chalks: [
+      {
+        color: 'rgba(255,255,255,0.5)',
+        cursor: `url(${chalkWhiteImage}), auto`,
+      },
+      {
+        color: 'rgba(96,154,244,0.5)',
+        cursor: `url(${chalkBlueImage}), auto`,
+      },
+      {
+        color: 'rgba(237,20,28,0.5)',
+        cursor: `url(${chalkRedImage}), auto`,
+      },
+      {
+        color: 'rgba(20,237,28,0.5)',
+        cursor: `url(${chalkGreenImage}), auto`,
+      },
+      {
+        color: 'rgba(220,133,41,0.5)',
+        cursor: `url(${chalkOrangeImage}), auto`,
+      },
+      {
+        color: 'rgba(220,0,220,0.5)',
+        cursor: `url(${chalkPurpleImage}), auto`,
+      },
+      {
+        color: 'rgba(255,220,0,0.5)',
+        cursor: `url(${chalkYellowImage}), auto`,
+      },
+    ],
   },
 };
 

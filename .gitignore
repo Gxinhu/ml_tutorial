@@ -10,3 +10,4 @@ mnist_lab/artifacts/*.txt
 
 .DS_Store
 .vscode
+dis.zip

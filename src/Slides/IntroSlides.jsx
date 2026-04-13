@@ -16,6 +16,9 @@ import backwardKeySVG from './assets/diagramSVG/backward-key.svg';
 import backwardNoKeySVG from './assets/diagramSVG/backward.svg';
 import backwardComputationSVG from './assets/diagramSVG/backwardComputation.svg';
 
+const linearModelImage = `${import.meta.env.BASE_URL}image/1219/linear_model.png`;
+const exampleDigitImage = `${import.meta.env.BASE_URL}image/1219/example1.png`;
+
 class IntroSlides extends Component {
   constructor(props) {
     super(props);
@@ -102,7 +105,7 @@ class IntroSlides extends Component {
             >
               <img
                 width="380px"
-                src="image/1219/linear_model.png"
+                src={linearModelImage}
                 alt="linear model"
               />
             </div>
@@ -323,7 +326,7 @@ class IntroSlides extends Component {
               <Box display="flex" justifyContent="center">
                 <img
                   width="380px"
-                  src="image/1219/example1.png"
+                  src={exampleDigitImage}
                   alt="handwritten digit example"
                 />
               </Box>

@@ -8,7 +8,8 @@ import PoolingDemo from '../Animation/PoolingDemo';
 import TensorShapeDiagram from '../Animation/TensorShapeDiagram';
 import MnistPipelineDiagram from '../Animation/MnistPipelineDiagram';
 
-const uvCode = `cd mnist_lab
+const uvCode = `git clone https://gitee.com/huxin2023/mnist_lab
+cd mnist_lab
 uv sync
 uv run python -m mnist_lab.main inspect
 uv run python -m mnist_lab.main train --epochs 3
@@ -144,7 +145,7 @@ const MnistSlides = () => (
           <ul className="soft-list">
             <li>{$('batch')}: 一次送进模型的一小批图片</li>
             <li>{$('epoch')}: 把整个训练集完整看过一遍</li>
-            <li>{$('learning\\ rate')}: 每次更新参数时走多大一步</li>
+            <li>{$('\\text{learning rate}')}: 每次更新参数时走多大一步</li>
           </ul>
         </div>
       </div>
@@ -253,7 +254,8 @@ const MnistSlides = () => (
         </div>
       </div>
       <div className="tip-strip" style={{ marginTop: 18 }}>
-        简单说，DataModule 的作用就是把“数据怎么准备好”这件事从训练流程里独立出来。
+        简单说，DataModule
+        的作用就是把“数据怎么准备好”这件事从训练流程里独立出来。
       </div>
     </Slide>
 
@@ -274,7 +276,10 @@ const MnistSlides = () => (
           <ul className="soft-list">
             <li>如果训练中反复看测试集，测试集就不再独立</li>
             <li>你会不知不觉根据测试结果去调整模型</li>
-            <li>更规范的做法是训练时看 {$('val_{acc}')}，最后才报告 {$('test_{acc}')}</li>
+            <li>
+              更规范的做法是训练时看 {$('val_{acc}')}，最后才报告{' '}
+              {$('test_{acc}')}
+            </li>
           </ul>
         </div>
       </div>
@@ -325,7 +330,9 @@ const MnistSlides = () => (
           </ul>
         </div>
         <div className="formula-card">
-          {$$('\\text{Conv2d} \\rightarrow \\text{ReLU} \\rightarrow \\text{MaxPool2d}')}
+          {$$(
+            '\\text{Conv2d} \\rightarrow \\text{ReLU} \\rightarrow \\text{MaxPool2d}',
+          )}
           <div className="tip-strip" style={{ marginTop: 12 }}>
             先提特征，再通过非线性筛出有效响应，最后再压缩尺寸，这个顺序最符合直觉，也最常见。
           </div>

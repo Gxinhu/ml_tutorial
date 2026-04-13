@@ -1,8 +1,19 @@
-/*
-	I have to use aberviations so my monkey brain doesnt have to type alot
-*/
+import React from 'react';
 import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
+import katex from 'katex';
 
-export const $ = inlineLaTeX => <InlineMath math={inlineLaTeX} />;
-export const $$ = blockLaTeX => <BlockMath math={blockLaTeX} />;
+const renderMath = (math, displayMode) => ({
+  __html: katex.renderToString(math, {
+    displayMode,
+    strict: 'ignore',
+    throwOnError: false,
+  }),
+});
+
+export const $ = inlineLaTeX => (
+  <span dangerouslySetInnerHTML={renderMath(inlineLaTeX, false)} />
+);
+
+export const $$ = blockLaTeX => (
+  <div dangerouslySetInnerHTML={renderMath(blockLaTeX, true)} />
+);

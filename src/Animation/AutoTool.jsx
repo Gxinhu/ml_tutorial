@@ -258,7 +258,7 @@ class SubTool extends Component {
                   >
                     {$(`${nullNumber(m, 2)}`)}
                   </span>
-                  {$(` x\\ + \\ `)}
+                  {$('x + ')}
                   <span
                     style={{
                       color: orange,
