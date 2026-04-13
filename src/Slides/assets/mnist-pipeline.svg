@@ -1,0 +1,54 @@
+<svg width="1080" height="360" viewBox="0 0 1080 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="360" rx="28" fill="#F8FBFF"/>
+  <rect x="28" y="28" width="1024" height="304" rx="24" fill="white" stroke="#D8E0EC" stroke-width="2"/>
+  <text x="54" y="66" fill="#3568D4" font-size="24" font-family="Noto Sans SC, sans-serif" font-weight="700">一张手写数字图片进入 CNN 之后，大致会经过这几步</text>
+
+  <rect x="56" y="114" width="150" height="160" rx="18" fill="#EAF1FF" stroke="#A9C2FF" stroke-width="2"/>
+  <g stroke="#3568D4" stroke-width="3">
+    <line x1="78" y1="148" x2="184" y2="148"/>
+    <line x1="78" y1="172" x2="184" y2="172"/>
+    <line x1="78" y1="196" x2="184" y2="196"/>
+    <line x1="78" y1="220" x2="184" y2="220"/>
+    <line x1="100" y1="126" x2="100" y2="244"/>
+    <line x1="128" y1="126" x2="128" y2="244"/>
+    <line x1="156" y1="126" x2="156" y2="244"/>
+    <circle cx="132" cy="186" r="22" fill="#3568D4"/>
+    <circle cx="132" cy="186" r="10" fill="white"/>
+  </g>
+  <text x="88" y="298" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">输入图片</text>
+
+  <path d="M230 192H278" stroke="#3568D4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M266 178L280 192L266 206" stroke="#3568D4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="296" y="114" width="172" height="160" rx="18" fill="#FFF8E8" stroke="#F0C66A" stroke-width="2"/>
+  <rect x="324" y="142" width="52" height="104" rx="10" fill="#FFDCA8"/>
+  <rect x="344" y="130" width="52" height="104" rx="10" fill="#FFE4B4"/>
+  <rect x="364" y="118" width="52" height="104" rx="10" fill="#FFF0D0"/>
+  <text x="334" y="298" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">卷积层</text>
+
+  <path d="M492 192H540" stroke="#3568D4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M528 178L542 192L528 206" stroke="#3568D4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="558" y="114" width="160" height="160" rx="18" fill="#F4F8FF" stroke="#B8CBF7" stroke-width="2"/>
+  <rect x="588" y="144" width="92" height="92" rx="14" fill="#D6E4FF"/>
+  <rect x="608" y="164" width="22" height="22" rx="6" fill="#3568D4"/>
+  <rect x="636" y="164" width="22" height="22" rx="6" fill="#88AFFF"/>
+  <rect x="608" y="192" width="22" height="22" rx="6" fill="#A9C2FF"/>
+  <rect x="636" y="192" width="22" height="22" rx="6" fill="#3568D4"/>
+  <text x="598" y="298" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">池化层</text>
+
+  <path d="M742 192H790" stroke="#3568D4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M778 178L792 192L778 206" stroke="#3568D4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="808" y="114" width="212" height="160" rx="18" fill="#F8FBFF" stroke="#D8E0EC" stroke-width="2"/>
+  <rect x="842" y="146" width="36" height="96" rx="10" fill="#E7EEF9"/>
+  <rect x="886" y="128" width="36" height="114" rx="10" fill="#C2D7FF"/>
+  <rect x="930" y="164" width="36" height="78" rx="10" fill="#9CBEFF"/>
+  <rect x="974" y="118" width="36" height="124" rx="10" fill="#3568D4"/>
+  <text x="852" y="298" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">全连接层 + 概率输出</text>
+
+  <text x="98" y="92" fill="#5F6B76" font-size="16" font-family="Noto Sans SC, sans-serif">28×28 灰度图</text>
+  <text x="330" y="92" fill="#5F6B76" font-size="16" font-family="Noto Sans SC, sans-serif">找边缘、笔画、局部形状</text>
+  <text x="593" y="92" fill="#5F6B76" font-size="16" font-family="Noto Sans SC, sans-serif">保留重要特征，降低尺寸</text>
+  <text x="858" y="92" fill="#5F6B76" font-size="16" font-family="Noto Sans SC, sans-serif">判断更像 0,1,2... 里的哪一个</text>
+</svg>

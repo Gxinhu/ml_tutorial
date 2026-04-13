@@ -1,0 +1,38 @@
+<svg width="920" height="360" viewBox="0 0 920 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="360" rx="28" fill="#F8FBFF"/>
+  <rect x="28" y="28" width="864" height="304" rx="24" fill="white" stroke="#D8E0EC" stroke-width="2"/>
+  <text x="56" y="70" fill="#3568D4" font-size="24" font-family="Noto Sans SC, sans-serif" font-weight="700">模型看到的不是“图片文件”，而是一个张量</text>
+  <text x="56" y="106" fill="#5F6B76" font-size="18" font-family="Noto Sans SC, sans-serif">MNIST 单张图片会被表示成 (1, 28, 28)，一批图片会被表示成 (batch, 1, 28, 28)</text>
+
+  <rect x="66" y="146" width="138" height="138" rx="18" fill="#EAF1FF" stroke="#A9C2FF" stroke-width="2"/>
+  <g stroke="#3568D4" stroke-width="3">
+    <line x1="84" y1="178" x2="186" y2="178"/>
+    <line x1="84" y1="204" x2="186" y2="204"/>
+    <line x1="84" y1="230" x2="186" y2="230"/>
+    <line x1="84" y1="256" x2="186" y2="256"/>
+    <line x1="104" y1="160" x2="104" y2="270"/>
+    <line x1="132" y1="160" x2="132" y2="270"/>
+    <line x1="160" y1="160" x2="160" y2="270"/>
+  </g>
+  <text x="96" y="302" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">一张 28×28 灰度图</text>
+
+  <text x="240" y="214" fill="#3568D4" font-size="42" font-family="Noto Sans SC, sans-serif" font-weight="700">→</text>
+
+  <rect x="300" y="154" width="166" height="132" rx="18" fill="#FFF8E8" stroke="#F0C66A" stroke-width="2"/>
+  <rect x="324" y="176" width="38" height="88" rx="8" fill="#FFDCA8"/>
+  <rect x="372" y="176" width="38" height="88" rx="8" fill="#FFE8BF"/>
+  <rect x="420" y="176" width="22" height="88" rx="8" fill="#FFF1D3"/>
+  <text x="328" y="310" fill="#20303C" font-size="20" font-family="Noto Sans SC, sans-serif" font-weight="700">(1, 28, 28)</text>
+  <text x="313" y="334" fill="#5F6B76" font-size="16" font-family="Noto Sans SC, sans-serif">1 个通道，高 28，宽 28</text>
+
+  <text x="502" y="214" fill="#3568D4" font-size="42" font-family="Noto Sans SC, sans-serif" font-weight="700">→</text>
+
+  <rect x="560" y="146" width="284" height="148" rx="18" fill="#F4F8FF" stroke="#B8CBF7" stroke-width="2"/>
+  <rect x="586" y="172" width="56" height="96" rx="10" fill="#D6E4FF"/>
+  <rect x="600" y="186" width="56" height="96" rx="10" fill="#C2D7FF"/>
+  <rect x="614" y="200" width="56" height="96" rx="10" fill="#AFCBFF"/>
+  <text x="692" y="186" fill="#20303C" font-size="22" font-family="Noto Sans SC, sans-serif" font-weight="700">(batch, 1, 28, 28)</text>
+  <text x="692" y="220" fill="#5F6B76" font-size="18" font-family="Noto Sans SC, sans-serif">把很多张图片堆成一批</text>
+  <text x="692" y="250" fill="#5F6B76" font-size="18" font-family="Noto Sans SC, sans-serif">这样 GPU 或 CPU 才能高效处理</text>
+  <text x="692" y="280" fill="#5F6B76" font-size="18" font-family="Noto Sans SC, sans-serif">训练时通常不会一张一张送进去</text>
+</svg>

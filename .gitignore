@@ -1,5 +1,12 @@
 /node_modules
 /build
+/dist
+.venv
+__pycache__/
+*.pyc
+mnist_lab/artifacts/*.pt
+mnist_lab/artifacts/*.png
+mnist_lab/artifacts/*.txt
 
 .DS_Store
 .vscode

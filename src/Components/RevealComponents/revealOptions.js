@@ -1,4 +1,4 @@
-import Reveal from 'reveal.js/js/reveal';
+import revealFullscreen from '../../Plugins/revealFullscreen';
 
 export default {
   // Display presentation control arrows
@@ -93,7 +93,7 @@ export default {
   autoSlideStoppable: true,
 
   // Use this method for navigation when auto-sliding
-  autoSlideMethod: Reveal.navigateNext,
+  autoSlideMethod: null,
 
   // Specify the average time in seconds that you think you will spend
   // presenting each slide. This is used to show a pacing timer in the
@@ -145,4 +145,6 @@ export default {
 
   // The display mode that will be used to show slides
   display: 'block',
+
+  plugins: [revealFullscreen].filter(Boolean),
 };
