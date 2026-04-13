@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Paper, Typography } from '@mui/material';
-import Slide from '../Components/RevealComponents/Slide';
+import { Slide } from '@revealjs/react';
 const PresentationLayout = () => (
     <Slide>
         <Grid container spacing={2}>

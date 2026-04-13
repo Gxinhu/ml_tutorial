@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from '../Components/RevealComponents/Slide';
+import { Slide } from '@revealjs/react';
 import { $, $$ } from '../Animation/Typeset';
 import Bash from '../Components/Highlight/Bash';
 import Python from '../Components/Highlight/Python';

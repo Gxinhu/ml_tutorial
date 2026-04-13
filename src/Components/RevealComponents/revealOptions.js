@@ -1,6 +1,28 @@
+import RevealHighlight from 'reveal.js/plugin/highlight';
+import RevealMarkdown from 'reveal.js/plugin/markdown';
+import RevealMath from 'reveal.js/plugin/math';
+import RevealNotes from 'reveal.js/plugin/notes';
+import RevealSearch from 'reveal.js/plugin/search';
+import RevealZoom from 'reveal.js/plugin/zoom';
+import blackboardImage from '../../../plugins/reveal.js-plugins/chalkboard/img/blackboard.png';
+import spongeImage from '../../../plugins/reveal.js-plugins/chalkboard/img/sponge.png';
+import revealChalkboard from '../../Plugins/revealChalkboard';
+import revealCustomControls from '../../Plugins/revealCustomControls';
 import revealFullscreen from '../../Plugins/revealFullscreen';
 
-export default {
+export const revealPlugins = [
+  RevealMarkdown,
+  RevealHighlight,
+  RevealNotes,
+  RevealSearch,
+  RevealZoom,
+  RevealMath,
+  revealCustomControls,
+  revealChalkboard,
+  revealFullscreen,
+].filter(Boolean);
+
+const revealConfig = {
   // Display presentation control arrows
   controls: true,
 
@@ -19,7 +41,7 @@ export default {
   progress: true,
 
   // Display the page number of the current slide
-  slideNumber: false,
+  slideNumber: 'h/v',
 
   // Add the current slide number to the URL hash so that reloading the
   // page/copying the URL will return you to the same slide
@@ -146,5 +168,15 @@ export default {
   // The display mode that will be used to show slides
   display: 'block',
 
-  plugins: [revealFullscreen].filter(Boolean),
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+    tex: {
+      inlineMath: [
+        ['$', '$'],
+        ['\\(', '\\)'],
+      ],
+    },
+  },
 };
+
+export default revealConfig;

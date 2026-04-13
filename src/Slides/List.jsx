@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from '../Components/RevealComponents/Slide';
+import { Slide } from '@revealjs/react';
 
 const List = () => (
   <Slide>

@@ -1,5 +1,5 @@
-import { React, Component } from 'react';
-import Slide from '../Components/RevealComponents/Slide';
+import React, { Component } from 'react';
+import { Slide } from '@revealjs/react';
 import { $, $$ } from '../Animation/Typeset';
 import ManualTool from '../Animation/ManualTool';
 import AutoTool from '../Animation/AutoTool';
