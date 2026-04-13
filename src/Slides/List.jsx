@@ -4,7 +4,7 @@ import { Slide } from '@revealjs/react';
 const List = () => (
   <Slide>
     <span className="section-label">Agenda</span>
-    <h3>今天只抓住四件事</h3>
+    <h3>今天只抓住五件事</h3>
     <ul className="agenda-list">
       <li>深度学习到底在做什么</li>
       <li>神经元、损失函数、反向传播</li>
